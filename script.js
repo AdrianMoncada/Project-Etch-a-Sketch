@@ -1,8 +1,5 @@
 const container = document.querySelector('#container');
-container.style.backgroundColor = 'gray'
-
-
-
+container.style.backgroundColor = 'black'
 
 function grid(rows, columns) {
   divs = rows*columns
@@ -11,14 +8,11 @@ function grid(rows, columns) {
   container.style.width = '500px'
   container.style.height = '500px'
   
-
-  
-
   for(let i = 1; i <= divs; i++) {
     const content = document.createElement('div');
     content.classList.add('content')
     content.setAttribute("id", "box")
-    content.style.backgroundColor = 'gray'
+    content.style.backgroundColor = 'black'
     container.appendChild(content);
   }
 }
